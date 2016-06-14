@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18235EE7-BF7E-4F74-AF5F-667170C51432}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RandomSiteControls</RootNamespace>
+    <AssemblyName>RandomSiteControls</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RandomSiteControlsMVC">
+      <HintPath>..\Web\bin\RandomSiteControlsMVC.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack">
+      <HintPath>..\Web\bin\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\Web\bin\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Sitefinity">
+      <HintPath>..\Web\bin\Telerik.Sitefinity.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Model">
+      <HintPath>..\Web\bin\Telerik.Sitefinity.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Utilities">
+      <HintPath>..\Web\bin\Telerik.Sitefinity.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\Web\bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\Web\bin\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\EmbedPositionEnum.cs" />
+    <Compile Include="Common\SteveControlBase.cs" />
+    <Compile Include="Common\SteveControlDesignerBase.cs" />
+    <Compile Include="Common\SteveLayoutControlBase.cs" />
+    <Compile Include="Configuration\ContentLiteralConfig.cs" />
+    <Compile Include="Configuration\DisqusConfig.cs" />
+    <Compile Include="Configuration\FreshdeskElement.cs" />
+    <Compile Include="Configuration\HttpHeaderElement.cs" />
+    <Compile Include="Configuration\PlaceholderConfig.cs" />
+    <Compile Include="Configuration\ScriptStyleConfig.cs" />
+    <Compile Include="Configuration\SitefinitySteveConfig.cs" />
+    <Compile Include="Configuration\SkinElement.cs" />
+    <Compile Include="ContentLiteral\ContentLiteral.cs" />
+    <Compile Include="ContentLiteral\Designer\ContentLiteralDesigner.cs" />
+    <Compile Include="FancyBox\FancyBoxLayout.cs" />
+    <Compile Include="Installer.cs" />
+    <Compile Include="Layouts\BlockQuoteLayout.cs" />
+    <Compile Include="Layouts\SimpleWrapperLayout.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="PageTitle\Designer\PageTitleDesigner.cs" />
+    <Compile Include="PageTitle\PageTitle.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScriptStyle\Designer\ScriptStyleDesigner.cs" />
+    <Compile Include="ScriptStyle\ScriptStyle.cs" />
+    <Compile Include="SkinEnum.cs" />
+    <Compile Include="TabStrip\TabStripConfigurator.cs" />
+    <Compile Include="TabStrip\TabStripDesigner.cs" />
+    <Compile Include="TabStrip\TabStripLayout.cs" />
+    <Compile Include="TabStrip\TabStripVerticalLayout.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\CodeMirror\closebrackets.js" />
+    <EmbeddedResource Include="Common\common.js" />
+    <EmbeddedResource Include="Common\common.min.js" />
+    <Content Include="Common\controlicons.gif" />
+    <EmbeddedResource Include="Common\Designer.css" />
+    <EmbeddedResource Include="Common\Designer.min.css" />
+    <Content Include="Common\layouts.gif" />
+    <EmbeddedResource Include="ContentLiteral\ContentLiteral.ascx" />
+    <EmbeddedResource Include="ContentLiteral\Designer\ContentLiteralDesigner.ascx" />
+    <EmbeddedResource Include="ContentLiteral\Designer\ContentLiteralDesigner.js" />
+    <Content Include="FancyBox\Resources\close-icon.png" />
+    <EmbeddedResource Include="FancyBox\Resources\fancybox-steve-layout.js" />
+    <EmbeddedResource Include="FancyBox\Resources\fancybox-steve-layout.min.js" />
+    <EmbeddedResource Include="FancyBox\Resources\fancybox-steve.css" />
+    <EmbeddedResource Include="FancyBox\Resources\fancybox-steve.min.css" />
+    <Content Include="FancyBox\Resources\fblayouts.gif" />
+    <EmbeddedResource Include="FancyBox\Resources\jquery.fancybox-1.3.8.min.js" />
+    <EmbeddedResource Include="FancyBox\Views\FancyBoxLayout.ascx" />
+    <EmbeddedResource Include="Layouts\Views\BlockQuoteLayout.ascx" />
+    <EmbeddedResource Include="Layouts\Views\SimpleWrapperLayout.ascx" />
+    <EmbeddedResource Include="PageTitle\Designer\PageTitleDesigner.ascx" />
+    <EmbeddedResource Include="PageTitle\Designer\PageTitleDesigner.js" />
+    <EmbeddedResource Include="PageTitle\PageTitle.ascx" />
+    <EmbeddedResource Include="ScriptStyle\Designer\ScriptStyleDesigner.ascx" />
+    <EmbeddedResource Include="ScriptStyle\Designer\ScriptStyleDesigner.js" />
+    <EmbeddedResource Include="ScriptStyle\ScriptStyle.ascx" />
+    <Content Include="TabStrip\Resources\configurator.png" />
+    <Content Include="TabStrip\Resources\horz-text.png" />
+    <Content Include="TabStrip\Resources\tabcontainer.png" />
+    <Content Include="TabStrip\Resources\tablayouts.png" />
+    <EmbeddedResource Include="TabStrip\Resources\TabStrip.combined.js" />
+    <EmbeddedResource Include="TabStrip\Resources\TabStrip.css" />
+    <EmbeddedResource Include="TabStrip\Resources\TabStrip.js" />
+    <EmbeddedResource Include="TabStrip\Resources\TabStrip.min.css" />
+    <EmbeddedResource Include="TabStrip\Resources\TabStrip.min.js" />
+    <Content Include="TabStrip\Resources\tabstripcontainer.png" />
+    <EmbeddedResource Include="TabStrip\Resources\TabStripDesigner.js" />
+    <EmbeddedResource Include="TabStrip\Views\TabStripConfigurator.ascx" />
+    <EmbeddedResource Include="TabStrip\Views\TabStripDesigner.ascx" />
+    <EmbeddedResource Include="TabStrip\Views\TabStripLayout.ascx" />
+    <EmbeddedResource Include="TabStrip\Views\TabStripVerticalLayout.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FancyBox\Resources\fancybox-steve-layout.min.js.map" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="TabStrip\Resources\TabStrip.less" />
+    <EmbeddedResource Include="TabStrip\Resources\TabStrip.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Layouts\Resources\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
