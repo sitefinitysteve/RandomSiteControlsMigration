@@ -107,10 +107,10 @@
     <EmbeddedResource Include="Common\CodeMirror\closebrackets.js" />
     <EmbeddedResource Include="Common\common.js" />
     <EmbeddedResource Include="Common\common.min.js" />
-    <Content Include="Common\controlicons.gif" />
+    <EmbeddedResource Include="Common\controlicons.gif" />
     <EmbeddedResource Include="Common\Designer.css" />
     <EmbeddedResource Include="Common\Designer.min.css" />
-    <Content Include="Common\layouts.gif" />
+    <EmbeddedResource Include="Common\layouts.gif" />
     <EmbeddedResource Include="ContentLiteral\ContentLiteral.ascx" />
     <EmbeddedResource Include="ContentLiteral\Designer\ContentLiteralDesigner.ascx" />
     <EmbeddedResource Include="ContentLiteral\Designer\ContentLiteralDesigner.js" />
