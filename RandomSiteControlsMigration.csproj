@@ -150,6 +150,7 @@
     <EmbeddedResource Include="FancyBox\Resources\fancybox-steve-layout.min.js.map" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="README.md" />
     <None Include="TabStrip\Resources\TabStrip.less" />
     <EmbeddedResource Include="TabStrip\Resources\TabStrip.min.js.map" />
   </ItemGroup>
